@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  color: #333;
+}
+
+/* Header tipo retro elegante */
+header {
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+
+
+/* Controles con marco y colores suaves */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background: #fff;
+  border-bottom: 2px solid #e5e7eb;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.controls label {
+  font-weight: 600;
+  color: #555;
+}
+
+.controls select {
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  color: #333;
+  transition: border 0.2s ease;
+}
+
+.controls select:focus {
+  border-color: #ff6ec4;
+  outline: none;
+}
+
+/* Cuadrícula 2x2 fija */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tarjetas estilo neón suave */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(255, 110, 196, 0.1), 0 4px 8px rgba(120, 115, 245, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(255, 110, 196, 0.15), 0 6px 12px rgba(120, 115, 245, 0.12);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #444;
+}
+
+/* Gráficos parejos */
+.card canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.miami-footer {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4);
+  color: #2b2b2b;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 -4px 12px rgba(255, 144, 188, 0.2);
+  border-top: 2px solid #fff;
+}
+
+.miami-footer a {
+  color: #d63384;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.miami-footer a:hover {
+  text-shadow: 0 0 5px rgba(255, 105, 180, 0.6);
+  text-decoration: underline;
+}
+
